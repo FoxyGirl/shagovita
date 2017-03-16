@@ -1,0 +1,22 @@
+html,
+body {
+  min-width: 320px;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $brand-color;
+  //background-color: $light-color;
+  //
+  //@include respond(desktop) {
+  //  font-size: $font-size-tablet;
+  //}
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
