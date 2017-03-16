@@ -1,0 +1,48 @@
+.main-nav {
+  @include clearfix;
+  float: right;
+
+  &__toggler {
+    @include respond(desktop) {
+      display: none;
+    }
+  }
+
+  &__list {
+    @include ul-clear;
+    float: right;
+  }
+
+  &__item {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 17px;
+
+    a {
+      display: block;
+      position: relative;
+      text-decoration: none;
+      color: $light-color;
+      padding: 0 12px 5px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        height: 2px;
+        background-color: $light-color;
+      }
+
+      &:hover {
+        &::after {
+          left: 0;
+          right: 0;
+          transition: left 0.5s, right 0.5s;
+        }
+      }
+    }
+
+  }
+}

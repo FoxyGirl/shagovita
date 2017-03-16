@@ -3,12 +3,23 @@ body {
   min-width: 320px;
   font-family: $font-family-base;
   font-size: $font-size-base;
+  font-weight: 500;
   color: $brand-color;
+  box-sizing: border-box;
   //background-color: $light-color;
   //
   //@include respond(desktop) {
   //  font-size: $font-size-tablet;
   //}
+}
+
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
 }
 
 img {

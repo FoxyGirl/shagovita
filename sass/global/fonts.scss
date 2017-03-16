@@ -1,9 +1,21 @@
 @font-face {
-  font-family: "GuardaSans";
-  src: local("GuardaSans"),
-  url("../fonts/GuardaSans-Regular.otf") format("otf"),
-  url("../fonts/opensans.woff") format("woff"),
-  url("../fonts/opensans.woff2") format("woff2");
-  font-weight: normal;
+  font-family:"Guarda Sans";
+  src: url("../fonts/Guarda Sans Medium.eot");
+  src: url("../fonts/Guarda Sans Medium.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Guarda Sans Medium.woff2") format("woff2"),
+  url("../fonts/Guarda Sans Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family:"Guarda Sans";
+  src: url("../fonts/Guarda Sans Bold.eot");
+  src: url("../fonts/Guarda Sans Bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Guarda Sans Bold.woff2") format("woff2"),
+  url("../fonts/Guarda Sans Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
 }

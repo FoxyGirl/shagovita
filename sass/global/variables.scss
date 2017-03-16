@@ -1,7 +1,17 @@
-$font-family-base: "GuardaSans", Arial, Calibri, sans-serif;
-//$font-family-light: "OpenSans Light", "Arial Narrow", Calibri, sans-serif;
+$font-family-base: "Guarda Sans", Tahoma, Arial, sans-serif;
 $font-size-base: 14px;
 $font-size-tablet: 18px;
 $line-height: 1.8;
 
-$brand-color: #283645;
+$brand-color: #0063a7;
+$light-color: #ffffff;
+$light-text-color: $light-color;
+
+$indent-help: 45px;
+
+$bp-xsmall: 320px; // Tiny-screen and old devices;
+$bp-small: 660px; // Mobiles and portrait-view tablets
+$bp-small-middle-width: 700px; // Normal mobile devices and small tablets;
+$bp-medium: 960px; // Desktop starts here
+$bp-large: 1040px; // Desktop seamless transition
+$bp-xlarge: 1280px;  // Normal size desktop view
