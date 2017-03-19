@@ -9,6 +9,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var sourcemaps = require('gulp-sourcemaps');
 var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
@@ -22,6 +23,7 @@ var concat = require("gulp-concat");
 
 gulp.task("style", function() {
     gulp.src("sass/style.scss")
+        .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass())
         .pipe(postcss([
@@ -37,6 +39,7 @@ gulp.task("style", function() {
             })
         ]))
         .pipe(minify())
+        .pipe(sourcemaps.write())
         .pipe(rename("style.min.css"))
         .pipe(gulp.dest("build/css"))
         .pipe(server.stream());
@@ -70,7 +73,7 @@ gulp.task("symbols", function() {
 
 gulp.task("copy", function() {
     return gulp.src([
-        "fonts/**/*.{woff,woff2}",
+        "fonts/*.*",
         "img/*.*",
         "js/picturefill.min.js",
         "*.html"

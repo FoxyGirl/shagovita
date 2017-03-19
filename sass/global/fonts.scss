@@ -1,21 +1,45 @@
-@font-face {
-  font-family:"Guarda Sans";
-  src: url("../fonts/Guarda Sans Medium.eot");
-  src: url("../fonts/Guarda Sans Medium.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/Guarda Sans Medium.woff2") format("woff2"),
-  url("../fonts/Guarda Sans Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-}
+//@font-face {
+//  font-family:"Guarda Sans";
+//  src: url("../fonts/GuardaSansMedium.eot");
+//  src: url("../fonts/GuardaSansMedium.eot?#iefix") format("embedded-opentype"),
+//  url("../fonts/GuardaSansMedium.woff") format("woff"),
+//  url("../fonts/GuardaSansMedium.woff2") format("woff2");
+//  font-weight: 500;
+//  font-style: normal;
+//  font-stretch: normal;
+//}
+//
+//@font-face {
+//  font-family:"Guarda Sans";
+//  src: url("../fonts/GuardaSansBold.eot");
+//  src: url("../fonts/GuardaSansBold.eot?#iefix") format("embedded-opentype"),
+//  url("../fonts/GuardaSansBold.woff") format("woff"),
+//  url("../fonts/GuardaSansBold.woff2") format("woff2");
+//  font-weight: 700;
+//  font-style: normal;
+//  font-stretch: normal;
+//}
 
 @font-face {
-  font-family:"Guarda Sans";
-  src: url("../fonts/Guarda Sans Bold.eot");
-  src: url("../fonts/Guarda Sans Bold.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/Guarda Sans Bold.woff2") format("woff2"),
-  url("../fonts/Guarda Sans Bold.woff") format("woff");
+  font-family:'Guarda Sans';
+  src: url('https://www.dropbox.com/s/at5or8bl4qcmc85/Guarda%20Sans%20Bold.eot?dl=0');
+  src: url('../fonts/Guarda Sans Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Guarda Sans Bold.woff2') format('woff2'),
+  url('../fonts/Guarda Sans Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
+  unicode-range: U+0020-02C6;
+}
+
+@font-face {
+  font-family:'Guarda Sans';
+  src: url('../fonts/Guarda Sans Medium.eot');
+  src: url('../fonts/Guarda Sans Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Guarda Sans Medium.woff2') format('woff2'),
+  url('../fonts/Guarda Sans Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-0131;
 }
