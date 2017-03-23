@@ -1,0 +1,36 @@
+.main-phone {
+  float: left;
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 55px;
+  text-decoration: none;
+  color: $light-color;
+  
+  &:hover {
+    .main-phone__number {
+      text-decoration: underline;
+    }
+
+    &::before {
+      animation: ring 2s;
+    }
+  }
+
+  &::before {
+    content: url('../img/icon-phone-white.png');
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+
+  &__text {
+    font-size: 29px;
+    text-shadow: -2px 2px 6px rgba(#000000, 0.8);
+  }
+
+  &__number {
+    font-size: 37px;
+    text-shadow: -2px 2px 6px rgba(#000000, 0.8);
+  }
+}
+

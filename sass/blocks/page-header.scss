@@ -2,20 +2,20 @@
   position: relative;
   color: $light-text-color;
   background: #ddd;
-  background-size: cover;
   @include clearfix;
 
   &__inner {
     @include container;
     padding-top: 45px;
     background: $brand-color url("../img/bg-back-header.jpg") top center no-repeat;
+    background-size: cover;
   }
 
   &__title {
     clear: both;
     font-size: 137px;
     font-weight: 700;
-    text-shadow: 6px 6px 5px $brand-color;
+    text-shadow: -2px 6px 5px rgba($brand-color, 0.66);
   }
 }
 
