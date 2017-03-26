@@ -8,7 +8,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center, top center;
-    background-attachment: fixed;
+    //background-attachment: fixed;
   }
 
   &__title {
@@ -74,7 +74,7 @@
     display: table-cell;
     vertical-align: top;
     text-align: center;
-    height: 420px;
+    height: 350px;
   }
 
   &__block {

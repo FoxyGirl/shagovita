@@ -1,0 +1,96 @@
+.registration {
+  &__inner {
+    @include container;
+    background: $yellow-color url("../img/bg-logo-yellow.png") center center repeat;
+  }
+
+  &__title {
+    margin-top: 0;
+    padding-top: 60px;
+    padding-right: 130px;
+    color: $red-color;
+    text-align: right;
+    font-size: $font-size-title;
+    font-weight: 700;
+    text-shadow: -2px 6px 5px rgba(#d1af12, 0.98);
+  }
+
+  &__form {
+    @include clearfix;
+  }
+
+  &__input {
+    float: left;
+    width: 32.35294%; /* 385 / 1190*/
+    margin-right: 1.4%; /* 15 / 1190 */
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    font-size: $font-size-input;
+    @include placeholder-color($dark-gray);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+    &--help {
+      margin-right: 0;
+    }
+
+    &--right {
+      float: right;
+      margin-right: 0;
+      clear: right;
+    }
+
+    &--full {
+      width: 100%;
+      margin-right: 0;
+    }
+    
+    &--select {
+      color: $dark-gray;
+      font-size: 16px;
+
+      .registration__input--default {
+        font-size: $font-size-input;
+      }
+    }
+
+    &--bottom {
+      margin-bottom: 420px;
+    }
+  }
+
+  &__input-select {
+    color: $dark-gray;
+    font-size: 16px;
+
+    &::-webkit-input-placeholder {
+      font-size: 36px;
+    }
+    &::-moz-placeholder {
+      font-size: 36px;
+    }
+    &:-ms-input-placeholder {
+      font-size: 36px;
+    }
+
+    //.registration__input-select--default {
+    //  font-size: 36px;
+    //}
+
+    option {
+      width: 20%;
+    }
+
+    option[selected="selected"] {
+      color: red;
+    }
+  }
+
+  &__block-inputs {
+    float: right;
+    width: 66.30252%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
