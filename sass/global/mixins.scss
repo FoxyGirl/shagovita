@@ -58,7 +58,7 @@
 
     // for generic tablet viewports (width from 700px to 959px)
   @else if $media == tablet-large {
-    @media only screen and (min-width: $bp-small-middle-width) and (max-width: $bp-medium - 1) { @content; }
+    @media only screen and (min-width: $bp-small-middle) and (max-width: $bp-medium - 1) { @content; }
   }
 
     // for generic tablet viewports (width from 660px to 959px)

@@ -1,0 +1,95 @@
+.prizes {
+
+  &__inner {
+    @include container;
+    background-image:
+            linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url("../img/bg-back-footer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center, top center;
+    background-attachment: fixed;
+  }
+
+  &__title {
+    margin: 0 165px 25px 0;
+    padding-top: 40px;
+    text-align: left;
+    font-size: $font-size-title;
+    font-weight: 700;
+    text-shadow: -2px 6px 5px rgba($dark-gray, 0.58);
+  }
+
+  &__item--main {
+    display: table;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  &__description {
+
+  }
+
+  &__description--main {
+    display: table-cell;
+    width: 415px;
+    vertical-align: middle;
+    font-size: 36px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+
+  &__picture {
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+
+    img {
+      transform: scale(0.9);
+      transition: transform 1s ease-out;
+      height: 337px;
+      width: auto;
+
+      @include respond(tablet-large) {
+        height: 180px;
+      }
+
+      @media only screen and (max-width: $bp-xlarge) {
+        height: 280px;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1);
+        transition: transform 1s ease-out;
+      }
+    }
+  }
+
+  &__picture--main {
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+    height: 420px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 105px;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-basis: 20%;
+    }
+  }
+
+
+}
