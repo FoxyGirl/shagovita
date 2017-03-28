@@ -9,6 +9,7 @@
   text-decoration: none;
   color: $light-color;
   background-color: $brand-color;
+  border: none;
   border-radius: 20px;
   outline: none;
 
@@ -25,5 +26,14 @@
 
   &--prize {
     min-width: 90%;
+  }
+
+  &--registration {
+    float: right;
+    margin-bottom: 70px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $light-color;
+    background-color: $red-color;
   }
 }

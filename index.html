@@ -136,28 +136,36 @@
             <div class="registration__inner">
                 <h2 class="registration__title">Регистрация чека</h2>
                 <form action="" class="registration__form" method="POST">
-                    <input type="text" class="registration__input" placeholder="Фамилия" name="surname">
-                    <input type="text" class="registration__input  registration__input--help" placeholder="Имя" name="name">
-                    <input type="text" class="registration__input  registration__input--right" placeholder="Отчество" name="father-name">
-                    <input type="email" class="registration__input" placeholder="E-mail" name="email">
-                    <input type="tel" class="registration__input  registration__input--help" placeholder="Телефон" name="phone">
-                    <input type="text" class="registration__input  registration__input--right" placeholder="Населенный пункт" name="city">
-                    <input type="text" class="registration__input  registration__input--help" placeholder="Улица" name="street">
-                    <div class="registration__block-inputs">
-                        <input type="text" class="registration__input" placeholder="Дом" name="house">
-                        <input type="text" class="registration__input" placeholder="Корпус" name="korp">
-                        <input type="text" class="registration__input" placeholder="Квартира" name="flat">
+                    <div class="registration__block-contacts">
+                        <input type="text" class="registration__input" placeholder="Фамилия" name="surname">
+                        <input type="text" class="registration__input  registration__input--help" placeholder="Имя" name="name">
+                        <input type="text" class="registration__input  registration__input--right" placeholder="Отчество" name="father-name">
+                        <input type="email" class="registration__input" placeholder="E-mail" name="email">
+                        <input type="tel" class="registration__input  registration__input--help" placeholder="Телефон" name="phone">
+                        <input type="text" class="registration__input  registration__input--right" placeholder="Населенный пункт" name="city">
+                        <input type="text" class="registration__input  registration__input--help" placeholder="Улица" name="street">
+                        <div class="registration__block-inputs">
+                            <input type="text" class="registration__input" placeholder="Дом" name="house">
+                            <input type="text" class="registration__input" placeholder="Корпус" name="korp">
+                            <input type="text" class="registration__input" placeholder="Квартира" name="flat">
+                        </div>
                     </div>
-                    <select class="registration__input  registration__input-select  registration__input--right" name="trade-company">
-                        <option selected="selected" disabled="" class="registration__input-select--default">Торговый объект*</option>
-                        <option>ЗАО ТД «Шаговита» Минский р-н, Пересечение Логойского тракта и МКАД, ТЦ «Экспобел» (2 этаж)</option>
-                        <option>ЗАО ТД «Шаговита» г. Новополоцк, ул. Молодежная. 102А-2</option>
-                    </select>
-                    <input type="text" class="registration__input  registration__input--right" placeholder="Дата покупки" name="date">
-                    <input type="text" class="registration__input  registration__input--right  registration__input--bottom" placeholder="Время покупки*" name="time">
+                    <div class="registration__block-trade">
+                        <select class="registration__input  registration__input-select  registration__input--right" name="trade-company">
+                            <option selected="selected" disabled="" class="registration__input-select--default">Торговый объект*</option>
+                            <option>ЗАО ТД «Шаговита» Минский р-н, Пересечение Логойского тракта и МКАД, ТЦ «Экспобел» (2 этаж)</option>
+                            <option>ЗАО ТД «Шаговита» г. Новополоцк, ул. Молодежная. 102А-2</option>
+                        </select>
+                        <input type="text" class="registration__input  registration__input--right" placeholder="Дата покупки" name="date">
+                        <input type="text" class="registration__input  registration__input--right  registration__input--bottom" placeholder="Время покупки*" name="time">
+                    </div>
                     <input type="text" class="registration__input  registration__input--full" placeholder="Это ваша первая покупка продукции «Shagovita»?" name="first">
                     <input type="text" class="registration__input  registration__input--full" placeholder="Откуда вы узнали о данной игре?" name="knowledge">
-
+                    <input type="checkbox" class="registration__input  registration__input--full  registration__input--checkbox" name="agreement" id="agreement">
+                    <label for="agreement" class="registration__label  registration__label--checkbox">
+                        <span>Я согласен с правилами рекламной игры</span>
+                    </label>
+                    <button class="btn  btn--registration" type="submit">Регистрация</button>
 
                 </form>
             </div>
