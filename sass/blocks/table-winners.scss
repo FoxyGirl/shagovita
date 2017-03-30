@@ -17,6 +17,7 @@
       border-top: $table-border;
 
       &:first-child {
+        width: 225px;
         border-left: $table-border;
         border-top-left-radius: $input-radius;
         border-bottom-left-radius: $input-radius;

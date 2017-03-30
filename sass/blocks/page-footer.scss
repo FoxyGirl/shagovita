@@ -1,0 +1,40 @@
+.page-footer {
+  &__inner {
+    @include container;
+    padding-top: 40px;
+    background: #fff url("../img/bg-back-footer.jpg") top center no-repeat;
+  }
+
+  &__logo {
+    float: left;
+    width: 225px;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  &__text {
+    padding-left: 225px;
+    font-size: 22px;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__phone {
+    a {
+      margin-right: 30px;
+      text-decoration: none;
+      color: $brand-color;
+      
+      &:hover {
+        color: $red-color;
+      }
+    }
+  }
+}
