@@ -5,7 +5,7 @@
 
   &__input {
     width: 510px;
-    padding: 17px 50px 17px 25px;
+    padding: 17px 75px 17px 25px;
     color: $brand-color;
     font-size: $font-size-input;
     border-radius: $input-radius;
@@ -19,7 +19,25 @@
     top: 0;
     width: 72px;
     height: 72px;
-    background-color: #545465;
+    background-color: $light-color;
+    border-radius: $input-radius;
+    border: none;
+    outline: none;
 
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      @include stitches-sprite(-5px, -269px, 32px, 33px);
+    }
+
+    &:hover {
+      background-color: $yellow-color;
+
+      &::after {
+        @include stitches-sprite(-5px, -312px, 32px, 33px);
+      }
+    }
   }
 }

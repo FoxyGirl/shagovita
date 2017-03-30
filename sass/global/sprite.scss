@@ -1,0 +1,54 @@
+@mixin stitches-sprite($x: 0, $y: 0, $width: 0, $height: 0) {
+  background-position: $x $y;
+  width: $width;
+  height: $height;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  //display: block;
+}
+
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+
+  &.sprite-spr-facebook {
+    @include stitches-sprite(-5px, -5px, 18px, 34px);
+  }
+
+  &.sprite-spr-facebook-hover {
+    @include stitches-sprite(-5px, -49px, 18px, 34px);
+  }
+
+  &.sprite-spr-instagram {
+    @include stitches-sprite(-5px, -93px, 35px, 34px);
+  }
+
+  &.sprite-spr-instagram-hover {
+    @include stitches-sprite(-5px, -137px, 35px, 34px);
+  }
+
+  &.sprite-spr-odnoklassniki {
+    @include stitches-sprite(-5px, -181px, 20px, 34px);
+  }
+
+  &.sprite-spr-odnoklassniki-hover {
+    @include stitches-sprite(-5px, -225px, 20px, 34px);
+  }
+
+  &.sprite-spr-search {
+    @include stitches-sprite(-5px, -269px, 32px, 33px);
+  }
+
+  &.sprite-spr-search-hover {
+    @include stitches-sprite(-5px, -312px, 32px, 33px);
+  }
+
+  &.sprite-spr-vk {
+    @include stitches-sprite(-5px, -355px, 32px, 18px);
+  }
+
+  &.sprite-spr-vk-hover {
+    @include stitches-sprite(-5px, -383px, 32px, 18px);
+  }
+}
