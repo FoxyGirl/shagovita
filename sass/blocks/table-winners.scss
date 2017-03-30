@@ -1,0 +1,36 @@
+.table-winners {
+  width: 100%;
+  clear: both;
+  margin-bottom: 87px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: $font-size-input;
+  text-align: left;
+
+  th, td {
+    padding: 10px 22px;
+    border-bottom: $table-border;
+  }
+
+  &__header {
+    th {
+      border-top: $table-border;
+
+      &:first-child {
+        border-left: $table-border;
+        border-top-left-radius: $input-radius;
+        border-bottom-left-radius: $input-radius;
+      }
+
+      &:last-child {
+        border-right: $table-border;
+        border-top-right-radius: $input-radius;
+        border-bottom-right-radius: $input-radius;
+      }
+    }
+  }
+
+  &__row {
+    //border-bottom: 3px solid $light-color;
+  }
+}
