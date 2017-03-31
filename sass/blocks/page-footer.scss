@@ -1,8 +1,15 @@
 .page-footer {
   &__inner {
     @include container;
+    min-height: 1024px;
     padding-top: 40px;
     background: #fff url("../img/bg-back-footer.jpg") top center no-repeat;
+    background-image: url("../img/bg-round-down.png"),
+                      url("../img/bg-back-footer.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto,
+                      cover;
   }
 
   &__logo {
@@ -27,14 +34,12 @@
   }
 
   &__phone {
-    a {
-      margin-right: 30px;
-      text-decoration: none;
-      color: $brand-color;
-      
-      &:hover {
-        color: $red-color;
-      }
+    margin-right: 30px;
+    text-decoration: none;
+    color: $brand-color;
+
+    &:hover {
+      color: $red-color;
     }
   }
 }

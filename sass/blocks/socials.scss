@@ -5,10 +5,73 @@
   &__link {
     display: inline-block;
     vertical-align: bottom;
+    position: relative;
     width: 50px;
     height: 50px;
     margin-top: 20px;
+    margin-right: 10px;
+    font-size: 0;
     background-color: $light-color;
     border: 2px solid $red-color;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: $red-color;
+    }
+
+    i {
+      position: absolute;
+      @include zero-centered;
+    }
+
+    &--facebook {
+      i {
+        @include stitches-sprite(-5px, -5px, 18px, 34px);
+      }
+
+      &:hover {
+        i {
+          @include stitches-sprite(-5px, -49px, 18px, 34px);
+        }
+      }
+    }
+
+    &--odnoklassniki {
+      i {
+        @include stitches-sprite(-5px, -181px, 20px, 34px);
+      }
+
+      &:hover {
+        i {
+          @include stitches-sprite(-5px, -225px, 20px, 34px);
+        }
+      }
+    }
+
+    &--vk {
+      i {
+        @include stitches-sprite(-5px, -355px, 32px, 18px);
+      }
+
+      &:hover {
+        i {
+          @include stitches-sprite(-5px, -383px, 32px, 18px);
+        }
+      }
+    }
+
+    &--instagram {
+      i {
+        @include stitches-sprite(-5px, -93px, 35px, 34px);
+      }
+
+      &:hover {
+        i {
+          @include stitches-sprite(-5px, -137px, 35px, 34px);
+        }
+      }
+    }
+
+
   }
 }
