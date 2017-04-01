@@ -8,7 +8,7 @@
   }
   
   &__title {
-    margin: 25px 165px 25px 0;
+    margin: 16px 145px 45px 0;
     text-align: right;
     font-size: $font-size-title;
     font-weight: 700;
@@ -30,17 +30,13 @@
         transform: rotate(180deg) scaleX(-1);
       }
     }
-
-    img {
-      //position: absolute;
-    }
   }
   
   &__rules {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 50px;
+    margin-bottom: 56px;
   }
 
   &__rules-item {
@@ -57,7 +53,7 @@
   &__footer {
     margin-right: -$indent-help;
     margin-left: -$indent-help;
-    padding: 15px $indent-help;
+    padding: 20px $indent-help;
     background-color: $yellow-color;
     color: $red-color;
     font-weight: 700;

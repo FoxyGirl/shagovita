@@ -2,7 +2,8 @@
   float: left;
   position: relative;
   padding-left: 70px;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
+  margin-left: 21px;
   text-decoration: none;
   color: $light-color;
   
@@ -25,6 +26,7 @@
 
   &__text {
     font-size: 29px;
+    letter-spacing: 0.03em;
     text-shadow: -2px 2px 6px rgba(#000000, 0.8);
   }
 

@@ -1,0 +1,17 @@
+.winers {
+  color: $light-color;
+
+  &__inner {
+    @include container;
+    background-color: $brand-color;
+    border-top: 1px solid transparent;
+  }
+
+  &__title {
+    margin: 37px 109px 33px 109px;
+    text-align: left;
+    font-size: $font-size-title;
+    font-weight: 700;
+    text-shadow: -2px 6px 5px rgba(#004c91, 0.9);
+  }
+}

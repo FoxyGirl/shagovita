@@ -1,37 +1,36 @@
 .table-winners {
   width: 100%;
   clear: both;
-  margin-bottom: 87px;
+  margin-bottom: 78px;
   border-collapse: separate;
   border-spacing: 0;
-  font-size: $font-size-input;
+  font-size: $font-size-input + 2;
   text-align: left;
 
-  th, td {
-    padding: 10px 22px;
+  td {
+    padding: 13px 22px;
     border-bottom: $table-border;
   }
 
   &__header {
     th {
       border-top: $table-border;
-
-      &:first-child {
-        width: 225px;
-        border-left: $table-border;
-        border-top-left-radius: $input-radius;
-        border-bottom-left-radius: $input-radius;
-      }
-
-      &:last-child {
-        border-right: $table-border;
-        border-top-right-radius: $input-radius;
-        border-bottom-right-radius: $input-radius;
-      }
+      border-bottom: $table-border;
+      padding: 7px 22px 7px 30px;
     }
   }
 
-  &__row {
-    //border-bottom: 3px solid $light-color;
+  &__date {
+    width: 305px;
+    border-left: $table-border;
+    border-top-left-radius: $input-radius;
+    border-bottom-left-radius: $input-radius;
+  }
+
+  &__prize {
+    width: 310px;
+    border-right: $table-border;
+    border-top-right-radius: $input-radius;
+    border-bottom-right-radius: $input-radius;
   }
 }

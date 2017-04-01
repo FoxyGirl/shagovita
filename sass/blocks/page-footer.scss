@@ -7,9 +7,7 @@
     background-image: url("../img/bg-round-down.png"),
                       url("../img/bg-back-footer.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% auto,
-                      cover;
+    background-position: center top, center bottom;
   }
 
   &__logo {
@@ -29,12 +27,16 @@
 
     p {
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
   }
 
   &__phone {
-    margin-right: 30px;
+    font-size: 32px;
+  }
+
+  &__phone-link {
+    margin-right: 25px;
     text-decoration: none;
     color: $brand-color;
 

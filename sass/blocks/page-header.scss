@@ -6,16 +6,34 @@
 
   &__inner {
     @include container;
-    padding-top: 45px;
+    padding-top: 40px;
     background: $brand-color url("../img/bg-back-header.jpg") top center no-repeat;
     background-size: cover;
   }
 
+  &__logo {
+    float: left;
+    width: 22.689%; /* 270 / (1280 - 2 * 45) */
+    margin: 0 21px 30px;
+
+    a {
+      display: block;
+    }
+  }
+
   &__title {
     clear: both;
-    font-size: 137px;
+    margin-top: 0;
+    margin-bottom: 130px;
+    padding-left: 15px;
+    font-size: 135px;
     font-weight: 700;
+    line-height: 0.9;
     text-shadow: -2px 6px 5px rgba($brand-color, 0.66);
+
+    span {
+      letter-spacing: 0.03em;
+    }
   }
 }
 
