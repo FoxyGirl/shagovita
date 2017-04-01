@@ -8,7 +8,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center, top center;
-    //background-attachment: fixed;
+    background-attachment: fixed;
   }
 
   &__title {
@@ -20,10 +20,52 @@
     text-shadow: -2px 6px 5px rgba($dark-gray, 0.58);
   }
 
-  &__item--main {
-    display: table;
-    width: 100%;
-    //margin-bottom: 60px;
+  &__picture {
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+
+    &.prizes__picture--main {
+      padding-right: 40px;
+    }
+
+    img {
+      transform: scale(1);
+      transition: transform 1s ease-out;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.15);
+        transition: transform 1s ease-out;
+      }
+    }
+  }
+
+  &__picture--main {
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 33.3%;
+
+    &.prizes__item--main {
+      display: table;
+      width: 100%;
+      margin-bottom: 60px;
+    }
   }
 
   &__description--main {
@@ -34,62 +76,6 @@
 
     p {
       margin: 0;
-    }
-  }
-
-
-  &__picture {
-    position: relative;
-    display: block;
-    margin-bottom: 40px;
-
-    &.prizes__picture--main {
-      img {
-        height: 430px;
-      }
-    }
-
-    img {
-      transform: scale(0.9);
-      transition: transform 1s ease-out;
-      height: 337px;
-      width: auto;
-
-      @include respond(tablet-large) {
-        height: 180px;
-      }
-
-      @media only screen and (max-width: $bp-xlarge) {
-        height: 340px;
-      }
-    }
-
-    &:hover {
-      img {
-        transform: scale(1);
-        transition: transform 1s ease-out;
-      }
-    }
-  }
-
-  &__picture--main {
-    display: table-cell;
-    vertical-align: top;
-    text-align: center;
-    height: 460px;
-  }
-
-  &__block {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-bottom: 90px;
-
-    &__item {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-basis: 20%;
     }
   }
 
