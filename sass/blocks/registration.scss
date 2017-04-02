@@ -141,12 +141,19 @@
   &__block-trade {
     position: relative;
     @include clearfix;
-
+/*
     &::before {
       content: url("../img/shop-check.png");
       position: absolute;
       right: $input-width;
       top: 66px;
-    }
+    } */
+  }
+
+  &__check {
+    position: absolute;
+    width: 63.86554%;
+    right: $input-width;
+    top: 66px;
   }
 }
