@@ -2,6 +2,7 @@ $font-family-base: 'Guarda Sans', Tahoma, Arial, sans-serif;
 $font-size-base: 14px;
 $font-size-tablet: 18px;
 $font-size-title: 62px;
+$font-size-small-title: $font-size-title * 0.7;
 $font-size-input: 32px;
 $line-height: 1.8;
 
@@ -14,6 +15,7 @@ $light-gray: #ddd;
 $dark-gray: #818181;
 
 $indent-help: 45px;
+$indent-small-help: 22px;
 
 $input-radius: 10px;
 $table-border: 3px solid $light-color;

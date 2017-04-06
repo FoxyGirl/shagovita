@@ -98,8 +98,12 @@
 @mixin container() {
   position: relative;
   margin: 0 auto;
-  padding: 0 $indent-help;
+  padding: 0 $indent-small-help;
   @include clearfix;
+
+  @include respond(desktop) {
+    padding: 0 $indent-help;
+  }
 
   @include respond(desktop-all) {
     max-width: $bp-xlarge;

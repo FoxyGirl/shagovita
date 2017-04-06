@@ -23,7 +23,11 @@
 
   &__text {
     padding-left: 225px;
-    font-size: 22px;
+    font-size: $font-size-base;
+
+    @include respond(desktop) {
+      font-size: 22px;
+    }
 
     p {
       margin-top: 0;

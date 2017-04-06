@@ -8,10 +8,15 @@
   }
 
   &__title {
-    margin: 37px 109px 33px 109px;
+    margin: 37px 0 33px 20px;
     text-align: left;
-    font-size: $font-size-title;
+    font-size: $font-size-small-title;
     font-weight: 700;
     text-shadow: -2px 6px 5px rgba(#004c91, 0.9);
+
+    @include respond(desktop) {
+      font-size: $font-size-title;
+      margin: 37px 109px 33px 109px;
+    }
   }
 }

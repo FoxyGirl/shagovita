@@ -4,8 +4,12 @@
   margin-bottom: 78px;
   border-collapse: separate;
   border-spacing: 0;
-  font-size: $font-size-input + 2;
+  font-size: 24px;
   text-align: left;
+
+  @include respond(desktop) {
+    font-size: $font-size-input + 2;
+  }
 
   td {
     padding: 13px 22px;
@@ -16,21 +20,33 @@
     th {
       border-top: $table-border;
       border-bottom: $table-border;
-      padding: 7px 22px 7px 30px;
+      padding: 7px 15px;
+
+      @include respond(desktop) {
+        padding: 7px 22px 7px 30px;
+      }
     }
   }
 
   &__date {
-    width: 305px;
+    width: 170px;
     border-left: $table-border;
     border-top-left-radius: $input-radius;
     border-bottom-left-radius: $input-radius;
+
+    @include respond(desktop) {
+      width: 305px;
+    }
   }
 
   &__prize {
-    width: 310px;
+    width: 150px;
     border-right: $table-border;
     border-top-right-radius: $input-radius;
     border-bottom-right-radius: $input-radius;
+
+    @include respond(desktop) {
+      width: 310px;
+    }
   }
 }

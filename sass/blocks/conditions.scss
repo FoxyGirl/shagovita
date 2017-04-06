@@ -8,22 +8,37 @@
   }
   
   &__title {
-    margin: 16px 145px 45px 0;
-    text-align: right;
-    font-size: $font-size-title;
+    margin: 16px 0 45px 0;
+    text-align: center;
+    font-size: $font-size-small-title;
     font-weight: 700;
     text-shadow: -2px 6px 5px rgba(#004c91, 0.9);
+
+    @include respond(desktop) {
+      margin: 16px 145px 45px 0;
+      font-size: $font-size-title;
+      text-align: right;
+    }
   }
 
   &__pictures {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
+
+    @include respond(desktop) {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+    }
   }
 
   &__picture-item {
     position: relative;
+    flex-basis: 130px;
+    margin-bottom: 40px;
 
     &--arrow_up {
       img {
@@ -34,32 +49,55 @@
   
   &__rules {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 56px;
+
+    @include respond(tablet) {
+      flex-direction: row;
+    }
   }
 
   &__rules-item {
-    font-size: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
     font-weight: 700;
     text-align: center;
-    flex-basis: 24%;
+    flex-basis: 100%;
+
+    @include respond(tablet) {
+      margin-bottom: 0;
+      font-size: 30px;
+      flex-basis: 24%;
+    }
 
     &--anketa {
-      flex-basis: 30%;
+
+
+      @include respond(desktop) {
+        flex-basis: 30%;
+      }
     }
   }
   
   &__footer {
-    margin-right: -$indent-help;
-    margin-left: -$indent-help;
-    padding: 20px $indent-help;
+    margin-right: -$indent-small-help;
+    margin-left: -$indent-small-help;
+    padding: 20px $indent-small-help;
     background-color: $yellow-color;
     color: $red-color;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+
+    @include respond(desktop) {
+      margin-right: -$indent-help;
+      margin-left: -$indent-help;
+      padding: 20px $indent-help;
+      font-size: 30px;
+    }
   }
 
 }
