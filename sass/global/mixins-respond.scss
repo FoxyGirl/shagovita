@@ -1,0 +1,85 @@
+$bp-xsmall: 320px; // Tiny-screen and old devices;
+$bp-msmall: 412px; // Tiny-screen and old devices;
+$bp-small: 660px; // Mobiles and portrait-view tablets
+$bp-small-middle: 700px; // Normal mobile devices and small tablets;
+$bp-medium: 960px; // Desktop starts here
+$bp-large: 1040px; // Desktop seamless transition
+$bp-xlarge: 1280px;  // Normal size desktop view
+
+
+@mixin respond($media) {
+
+  // for generic mobile viewports (width  to 320px)
+  @if $media == mobile-xsmall {
+    @media only screen and (max-width: $bp-xsmall) { @content; }
+  }
+
+  // for generic mobile viewports (width  to 412px)
+  @if $media == mobile-small {
+    @media only screen and (max-width: $bp-msmall) { @content; }
+  }
+
+  //// for generic mobile viewports (width  from 412px and bigger)
+  //@if $media == mobile-small {
+  //  @media only screen and (min-width: $bp-msmall) { @content; }
+  //}
+
+  // for generic mobile viewports (width  to 659px)
+  @if $media == mobile {
+    @media only screen and (max-width: $bp-small - 1) { @content; }
+  }
+
+  // for generic mobile viewports (width  to 659px) and retina
+  @if $media == mobile-retina {
+    @media only screen and (max-width: $bp-small - 1) and (min-resolution: 144dpi),
+    (max-width: $bp-small - 1) and (min-resolution: 1.5dppx) { @content; }
+  }
+
+    // for generic tablet viewports (width from 660px and bigger)
+  @else if $media == tablet {
+    @media only screen and (min-width: $bp-small) { @content; }
+  }
+
+    // for generic tablet viewports (width from 700px to 959px)
+  @else if $media == tablet-large {
+    @media only screen and (min-width: $bp-small-middle) and (max-width: $bp-medium - 1) { @content; }
+  }
+
+    // for generic tablet viewports (width from 660px to 959px)
+  @else if $media == tablet-only {
+    @media only screen and (min-width: $bp-small) and (max-width: $bp-medium - 1) { @content; }
+  }
+
+    // for generic tablet viewports (width from 660px to 959px)
+  @else if $media == tablet-only-retina {
+    @media only screen and (min-width: $bp-small) and (max-width: $bp-medium - 1) and (min-resolution: 144dpi),
+    (min-width: $bp-small) and (max-width: $bp-medium - 1) and (min-resolution: 1.5dppx) { @content; }
+  }
+
+    // width for small-desktop viewports (from 960px to 1040px, intermediate values)
+  @else if $media == desktop-small {
+    @media only screen and (min-width: $bp-medium + 1) and (max-width: $bp-large) { @content; }
+  }
+
+    // for ALL desktop viewports (from 960px and bigger)
+  @else if $media == desktop {
+    @media only screen and (min-width: $bp-medium) { @content; }
+  }
+
+    // for ALL desktop viewports (from 960px and bigger)
+  @else if $media == desktop-retina {
+    @media only screen and (min-width: $bp-medium) and (min-resolution: 144dpi),
+    (min-width: $bp-medium) and (min-resolution: 1.5dppx) { @content; }
+  }
+
+  //  // for desktop viewports (from 1279 and bigger)
+  //@else if $media == desktop-all {
+  //  @media only screen and (min-width: $bp-xlarge + 1) { @content; }
+  //}
+
+    // for desktop viewports (from 1040 and bigger)
+  @else if $media == desktop-all {
+    @media only screen and (min-width: $bp-large + 1) { @content; }
+  }
+
+}

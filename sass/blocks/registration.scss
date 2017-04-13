@@ -1,4 +1,6 @@
 .registration {
+  color: $dark-gray;
+
   &__inner {
     @include container;
     background: $yellow-color url("../img/bg-logo-yellow.png") center center repeat;
@@ -40,14 +42,31 @@
     outline: none;
     border: none;
 
-    &--help {
-      margin-right: 0;
+    @include respond(tablet) {
+      width: 48%;
+
+      &:nth-child(2n) {
+        float: right;
+        margin-right: 0;
+      }
     }
 
-    &--right {
-      float: right;
-      margin-right: 0;
-      clear: right;
+    @include respond(desktop) {
+      float: left;
+      width: $input-width; /* 385 / 1190*/
+      margin-right: 1.4%; /* 15 / 1190 */
+      margin-bottom: 23px;
+      padding: 17px 27px;
+      font-size: $font-size-input;
+
+      &:nth-child(2n) {
+        float: left;
+      }
+
+      &:nth-child(3n) {
+        float: right;
+        margin-right: 0;
+      }
     }
 
     &--full {
@@ -106,6 +125,10 @@
         background-color: $light-color;
         border-radius: $input-radius;
       }
+      
+      &:hover {
+        color: $brand-color;
+      }
     }
   }
 
@@ -138,6 +161,10 @@
     width: 66.30252%;
     display: flex;
     justify-content: space-between;
+
+    .registration__input:last-child {
+      margin-right: 0;
+    }
   }
 
   &__block-contacts {

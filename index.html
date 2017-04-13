@@ -137,13 +137,13 @@
                 <h2 class="registration__title">Регистрация чека</h2>
                 <form action="" class="registration__form" method="POST">
                     <div class="registration__block-contacts">
-                        <input type="text" class="registration__input" placeholder="Фамилия" name="surname">
-                        <input type="text" class="registration__input  registration__input--help" placeholder="Имя" name="name">
-                        <input type="text" class="registration__input  registration__input--right" placeholder="Отчество" name="father-name">
-                        <input type="email" class="registration__input" placeholder="E-mail" name="email">
-                        <input type="tel" class="registration__input  registration__input--help" placeholder="Телефон" name="phone">
-                        <input type="text" class="registration__input  registration__input--right" placeholder="Населенный пункт" name="city">
-                        <input type="text" class="registration__input  registration__input--help" placeholder="Улица" name="street">
+                        <input type="text" class="registration__input" placeholder="Фамилия*" name="surname" required autofocus  >
+                        <input type="text" class="registration__input" placeholder="Имя*" name="name" required>
+                        <input type="text" class="registration__input" placeholder="Отчество*" name="father-name" required>
+                        <input type="email" class="registration__input" placeholder="E-mail*" name="email" required>
+                        <input type="tel" class="registration__input" placeholder="Телефон*" name="phone" required>
+                        <input type="text" class="registration__input" placeholder="Населенный пункт" name="city">
+                        <input type="text" class="registration__input" placeholder="Улица" name="street">
                         <div class="registration__block-inputs">
                             <input type="text" class="registration__input" placeholder="Дом" name="house">
                             <input type="text" class="registration__input" placeholder="Корпус" name="korp">
@@ -152,13 +152,13 @@
                     </div>
                     <div class="registration__block-trade">
                         <img src="img/shop-check.png" alt="" class="registration__check">
-                        <select class="registration__input  registration__input-select  registration__input--right" name="trade-company">
+                        <select class="registration__input  registration__input-select  registration__input--right" name="trade-company" required>
                             <option selected="selected" disabled="" class="registration__input-select--default">Торговый объект*</option>
                             <option>ЗАО ТД «Шаговита» Минский р-н, Пересечение Логойского тракта и МКАД, ТЦ «Экспобел» (2 этаж)</option>
                             <option>ЗАО ТД «Шаговита» г. Новополоцк, ул. Молодежная. 102А-2</option>
                         </select>
-                        <input type="text" class="registration__input  registration__input--right" placeholder="Дата покупки" name="date">
-                        <input type="text" class="registration__input  registration__input--right  registration__input--bottom" placeholder="Время покупки*" name="time">
+                        <input type="date" class="registration__input  registration__input--right" placeholder="Дата покупки*" name="date" required>
+                        <input type="time" class="registration__input  registration__input--right  registration__input--bottom" placeholder="Время покупки*" name="time" required>
                     </div>
                     <input type="text" class="registration__input  registration__input--full" placeholder="Это ваша первая покупка продукции «Shagovita»?" name="first">
                     <input type="text" class="registration__input  registration__input--full" placeholder="Откуда вы узнали о данной игре?" name="knowledge">
