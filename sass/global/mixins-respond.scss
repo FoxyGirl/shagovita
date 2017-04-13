@@ -1,12 +1,12 @@
 $bp-xsmall: 320px; // Tiny-screen and old devices;
 $bp-msmall: 412px; // Tiny-screen and old devices;
-$bp-small: 660px; // Mobiles and portrait-view tablets
+$bp-small: 550px; // Mobiles and portrait-view tablets
 $bp-small-middle: 700px; // Normal mobile devices and small tablets;
 $bp-medium: 960px; // Desktop starts here
 $bp-large: 1040px; // Desktop seamless transition
 $bp-xlarge: 1280px;  // Normal size desktop view
 
-
+/*
 @mixin respond($media) {
 
   // for generic mobile viewports (width  to 320px)
@@ -81,5 +81,28 @@ $bp-xlarge: 1280px;  // Normal size desktop view
   @else if $media == desktop-all {
     @media only screen and (min-width: $bp-large + 1) { @content; }
   }
+}
+*/
 
+@mixin respond($media) {
+
+  // for ALL desktop viewports (from 960px and less)
+  @if $media == mobile {
+    @media only screen and (max-width: $bp-small) { @content; }
+  }
+
+  // for ALL desktop viewports (from 960px and less)
+  @if $media == tablet {
+    @media only screen and (max-width: $bp-medium) { @content; }
+  }
+
+  // for ALL desktop viewports (from 960px and less)
+  @if $media == desktop {
+    @media only screen and (min-width: $bp-medium + 1) { @content; }
+  }
+
+  // for desktop viewports (from 1040 and bigger)
+  @if $media == desktop-all {
+    @media only screen and (min-width: $bp-large + 1) { @content; }
+  }
 }

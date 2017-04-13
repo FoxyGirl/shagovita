@@ -11,6 +11,10 @@
     border-radius: $input-radius;
     outline: none;
     border: none;
+
+    @include respond(mobile) {
+      width: 100%;
+    }
   }
 
   &__btn {
